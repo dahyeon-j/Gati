@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>가티</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="javascript/signup.js"></script>
+</head>
+<body>
+    <div class="signup_page_container">
+      <div class="signup_page_container_inner">
+        <br>
+        <h1>Gati와 '같이' 하시겠습니까?</h1>
+        <form action="signup_page.html" method="post" onsubmit="return checkValidation()">
+          *이메일<br> <input type="text" class="signup_input_box" placeholder="example@gati.com 이메일 형식을 지켜주세요" name="id" id="id_" required><button type="button" id="id_overlapping_button">중복확인</button>
+          <div class="id_overlapping_notice">중복확인이 필요합니다!</div>
+          <br>
+          *비밀번호<br> <input type="password" class="signup_input_box" placeholder="비밀번호" name="psw" id="psw_" required><br>
+          <div class="pw_notice">비밀번호는 영문,숫자,특수문자 3가지가 포함된 8~15자로 설정해주세요</div><br>
+          *비밀번호 확인<br> <input type="password" class="signup_input_box" placeholder="비밀번호 확인" name="psw2" id="psw2_" required><br><br>
+          <br><br>
+          <input type="submit" id="signup_page_signup_button" value="가입하기"><br><br>
+          <!--<button id="signup_page_signup_button" type="submit">가입하기</button><br><br>-->
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>가티</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <span id="announcement_page_title1">Gati</span>
+  <span id="announcement_page_title2">가티시킬래?</span>
+  <div id="login_info">
+    <!--<img src="login_info_imgs/jiwon.png" alt="jiwon.jpg" id var name = ="l=ogin_info; aler(name);_img">-->
+    <h1><%= name %></h1>
+    <button id="logout_button" onclick="onClickLogoutButton()">로그아웃</button>
+    <span id="login_info_name"></span>
+    <script>document.getElementById("login_info_name").innerHTML = sessionStorage.getItem('user');</script>
+  </div>
+    <div class="announcement_page_container">
+        <div id="address_section">
+          <div id="address_section_address">
+            대전 유성구 대학로 99 공대 5호관 306호
+          </div> 
+          <a href="test.html" id="address_search_button" onclick="window.open(this.href, '_blank', 'width=10px,height=세10px,toolbars=no,scrollbars=no'); return false;">주소 등록하기</a>
+        </div>
+        <span id="notice_title">공고</span>
+        <button type="button" name="button" id="announcement_registration_button">공고 등록</button>
+        <div class="" id="notice_board">
+          <div class="notice_board_element">
+            충만치킨 / 궁동소비자마트 / 20시 <br>
+            5000원 / 12000원(최소주문금액)
+            <button type="button" class="join_button">가티하기</button>
+          </div>
+
+        </div>
+    </div>
+    <div class="" id="announcement_registration_window" style="display:none">
+      <form onsubmit="return clickRegisterButton()" action="announcement_page.html" method="post">
+        업체명<input type="text" name="restaurant" required><br>
+        장소<input type="text" name="where" required><br>
+        시간<input type="text" name="time" required><br>
+        주문자 배달금액<input type="number" name="user_delivery_amount" value="" min=1000 required><br>
+        최소 주문 금액<input type="number" name="minimum_order_amount" value="" min="1000" required><br>
+        <input type="hidden" name="register_" value="register">
+        <input type="hidden" name="user_id" id="user_id">
+        <input type="submit" name="" value="등록하기">
+      </form>
+    </div>
+
+    <div class="join_registration" style="display:none">
+      
+      업체명 충만치킨<br>
+      장소 궁동소비자마트<br>
+      시간 20시<br>
+      주문 상세 내용 <input type="textarea" name="" value=""><br>
+      주문 금액 <input type="text" name="" value=""><br>
+      현재 누적금액 주문 금액 5000원<br>
+      <input type="hidden" name="user_id" id="user_id">
+      <input type="hidden" name="register_" value="join">
+      <input type="submit" name="" value="등록하기">
+    </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./javascript/announcement.js"></script>
+
+</html>

@@ -1,0 +1,186 @@
+/* main_page css */
+html{
+  background-color: #FF6347;
+}
+.main_page_container{
+  width: 400px;
+  height: 400px;
+  background: white;
+  border: 1px solid #e9ecef;
+  margin: auto;
+  margin-top: 100px;
+}
+.main_page_container_inner{
+  width: 260px;
+  height: 300px;
+  margin: auto;
+}
+
+#login_button{
+  width: 250px;
+  height: 50px;
+  background-color: #FF6347;
+  border: none;
+  border-radius:5px;
+}
+
+#signup_button{
+  background-color: white;
+  border: none;
+}
+
+.login_input_box{
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #e9ecef;
+}
+
+/* signup_page css */
+.signup_page_container{
+  width: 700px;
+  height: 500px;
+  background: white;
+  border: 1px solid #e9ecef;
+  margin: auto;
+  margin-top: 100px;
+}
+.signup_page_container_inner{
+  width: 405px;
+  height: 300px;
+  margin: auto;
+}
+.signup_input_box{
+  width: 300px;
+  height: 30px;
+  border: 1px solid #e9ecef;
+}
+.pw_notice,.id_overlapping_notice{
+  color: red;
+  font-size: xx-small;
+}
+#id_overlapping_button{
+  background-color: white;
+  border: none;
+  font-size: x-small;
+  height: 30px;
+}
+#signup_page_signup_button{
+  width: 405px;
+  height: 50px;
+  background-color: #FF6347;
+  border: none;
+  border-radius:5px;
+}
+#a_signup_page{
+  text-decoration: none;
+}
+
+/* announcement_page css */
+
+.announcement_page_container{
+  width: 80%;
+  height: 1000px;
+  background: white;
+  border: 1px solid #e9ecef;
+  margin: auto;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top: 110px;
+
+}
+#announcement_page_title1{
+  font-size: 80px;
+  color: white;
+  position: absolute;
+  left: 10%;
+}
+#announcement_page_title2{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+}
+#login_info{
+  background-color: white;
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  right: 10%;
+  top : 30px;
+}
+#login_info_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#login_info_name{
+  position: absolute;
+  left: 80px;
+  top: 25px;
+}
+#address_section{
+  height: 100px;
+  width: 100%;
+  border-bottom:1px solid #e9ecef;
+  margin-bottom: 30px;
+}
+#address_section_address{
+  position: absolute;
+  font-size: x-large;
+  left: 10px;
+  top:35px;
+}
+#address_search_button{
+  position: absolute;
+  right: 10px;
+  top:70px;
+}
+#notice_title{
+  margin-left: 10px;
+  font-size: x-large;
+}
+#announcement_registration_button{
+  margin-left: 630px;
+  margin-bottom: 10px;
+}
+#notice_board{
+  border: 1px solid #e9ecef;
+  width: 80%;
+  height: 700px;
+  overflow:scroll;
+  overflow-x: hidden;
+  margin-left: 10px;
+}
+.notice_board_element{
+  border: 5px solid #FF6347;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+#announcement_registration_window{
+  position: absolute;
+  left: 27%;
+  /* left;50%; transform:translateX(-50%); */
+  top:50%;
+  transform: translateY(-50%);
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+}
+/*class로 div 처리*/
+.join_registration{
+  position: absolute;
+  left: 45%;
+  /* left;50%; transform:translateX(-50%); */
+  top:50%;
+  transform: translateY(-50%);
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+}
